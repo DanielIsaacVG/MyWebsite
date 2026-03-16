@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+<head>
+  <p id="box">Answer will go here.</p>
+</head>
+<body>
+  <script>
+    let ans = document.getElementById("box");
+
+    function greaterGrade(g1,g2){
+      if (g1.toLowerCase() < g2.toLowerCase()) {
+        return g1;
+      }
+      else {
+        return g2;
+      }
+    }
+
+    ans.textContent = greaterGrade("F","G");
+
+
+  </script>
+</body>
+</html>
